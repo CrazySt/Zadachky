@@ -73,6 +73,7 @@ public class SimpleDynamicArray implements IDynamicArray {
 		return null;
 	}
 	public void clear(){
+		length=0;
 		array=null;
 	}
 	public Object get(int index){
