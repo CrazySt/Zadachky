@@ -17,6 +17,8 @@ public class DynamicArrays {
 			System.out.println(dArray.get(i).toString());
 		}
 	}
+
+	// CPA: лучше сделать чтение массива независимо от источника (файл, консоль, сокет...) - как это сделать?
 	public static IDynamicArray readArrayFromConsole() throws IllegalStateException{
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Выберите тип элементов массива:\n" +

@@ -1,7 +1,7 @@
 package ru.sergey.arrays;
 
 public class LinkedDynamicArray implements IDynamicArray {
-	Node element;
+	Node element; // CPA: а модификатор доступа?
 	public LinkedDynamicArray(){
 		element=null;
 	}
@@ -132,6 +132,8 @@ public class LinkedDynamicArray implements IDynamicArray {
 		}
 		return -1;
 	}
+
+	// CPA: почему класс статический? почему нет модификаторов у полей класса?
 	private static class Node {
         Object item;
         Node next;
